@@ -29,6 +29,6 @@ public class GuviLoginPage {
 		driver.findElement(By.xpath("//a[@id=\"signup-btn\"]")).click();
 		driver.findElement(By.id("laterBtn")).click();
 		System.out.println("New user created successfully");
-		driver.quit();
+		driver.close();//driver.quit();
 	}
 }
