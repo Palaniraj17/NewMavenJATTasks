@@ -20,7 +20,6 @@ public class GuviLoginPage {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1));
 		WebElement tosignin =wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Sign up']")));
 		tosignin.click();
-		
 		System.out.println(driver.getTitle());
 		driver.findElement(By.id("name")).sendKeys("DummyName");
 		driver.findElement(By.id("email")).sendKeys("DummyName2@dummy.com");//change this id for each run
